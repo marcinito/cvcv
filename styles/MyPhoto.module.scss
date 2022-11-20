@@ -1,0 +1,16 @@
+.container{
+    width:100%;
+    background-color: skyblue;
+    height:40%;
+    .photo{
+    width:95%;
+    height:95%;
+    border:3px solid blue;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    // background: url("../public/MarcinZdj.png");
+    // background-size: cover;
+   
+    }
+}
