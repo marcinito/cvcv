@@ -4,32 +4,38 @@ import { sizeMyPhoto } from '../../Interface/MyPhotoInterface'
 import PartOfPhoto from './partOfPhoto'
 const MyPhoto = () => {
     const [sizeParent,setSizeParent]=useState<sizeMyPhoto>({x:0,y:0})
+    const [amount,setAmount]=useState<number>(12)
     const myPhoto=useRef<HTMLDivElement>(null)
    
-    let arrayPhoto=[1,2,3,4,5,6,7,8,9,10,11,12]
-
+    let arrayPhoto:number[]=[]
+     for(let i=1;i<amount+1;i++){
+        arrayPhoto.push(i)
+     }
+console.log(arrayPhoto,"array")
     useEffect(()=>{
      
    
         if(myPhoto.current!==null){
             setSizeParent({...sizeParent,
-                x:Number(window.getComputedStyle(myPhoto.current).getPropertyValue("width").slice(0,3)),
-                y:Number(window.getComputedStyle(myPhoto.current).getPropertyValue("height").slice(0,3))
+                x:myPhoto.current.clientWidth,
+                y:myPhoto.current.clientHeight
             })
            
             
             
         }
-       
+     
     },[])
     return ( <div className={s.container}>
         <div className={s.photo} ref={myPhoto}>
             {arrayPhoto.map((el,i,arr)=>{
                 return(
-                    <PartOfPhoto size={sizeParent} id={el} key={el}></PartOfPhoto>
+                    <PartOfPhoto  size={sizeParent} id={el} key={el}></PartOfPhoto>
                 )
             })}
         </div>
+        <input type="number" value={amount} onChange={(e)=>setAmount(e.target.value)}></input>
+        <button>Add cage</button>
     </div> );
 }
  

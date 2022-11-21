@@ -5,17 +5,24 @@ interface Props{
         x:number,
         y:number
     },
-    id:number
+    id:number,
+   
 }
+
 
 const PartOfPhoto = (props:Props) => {
 
+    
 console.log(props)
     const partPhoto=useRef<HTMLDivElement>(null)
 
     useEffect(()=>{
         if(partPhoto.current!==null){
-           
+            if(props.id===2){
+                
+                
+               
+            }
             partPhoto.current.style.backgroundSize=`${props.size.x}px ${props.size.y}px`
             if(props.id===2){
                 
