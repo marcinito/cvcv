@@ -1,0 +1,27 @@
+.container{
+    position:relative;
+    height:75%;
+    display:block;
+ 
+    font-size:3vh;
+    width:93%;
+    margin:auto;
+
+  
+    .pDescribe{
+        font-family: 'Patrick Hand', cursive;
+        color:lighten(black,20%);
+        width:94%;
+        text-align: center;
+        padding:1% 0 5%;
+        text-indent: 10%;
+        a{
+            padding:0 3px 0 3px;
+        }
+        .secondPartText{
+            // color:darken(white,20%);
+            color:black;
+          
+        }
+    }
+}

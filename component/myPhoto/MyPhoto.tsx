@@ -4,14 +4,13 @@ import { sizeMyPhoto } from '../../Interface/MyPhotoInterface'
 import PartOfPhoto from './partOfPhoto'
 const MyPhoto = () => {
     const [sizeParent,setSizeParent]=useState<sizeMyPhoto>({x:0,y:0})
-    const [amount,setAmount]=useState<number>(12)
+    const [resize,setResize]=useState<boolean>(false)
+  
     const myPhoto=useRef<HTMLDivElement>(null)
    
-    let arrayPhoto:number[]=[]
-     for(let i=1;i<amount+1;i++){
-        arrayPhoto.push(i)
-     }
-console.log(arrayPhoto,"array")
+    let arrayPhoto:number[]=[1,2,3,4,5,6,7,8,9,10,11,12]
+
+
     useEffect(()=>{
      
    
@@ -25,8 +24,8 @@ console.log(arrayPhoto,"array")
             
         }
      
-    },[])
-    return ( <div className={s.container}>
+    },[resize])
+    return ( <article className={s.container}>
         <div className={s.photo} ref={myPhoto}>
             {arrayPhoto.map((el,i,arr)=>{
                 return(
@@ -34,9 +33,9 @@ console.log(arrayPhoto,"array")
                 )
             })}
         </div>
-        <input type="number" value={amount} onChange={(e)=>setAmount(e.target.value)}></input>
-        <button>Add cage</button>
-    </div> );
+       
+    
+    </article> );
 }
  
 export default MyPhoto;

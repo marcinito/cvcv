@@ -1,0 +1,59 @@
+.container{
+    position:relative;
+    width:99%;
+
+
+    margin:auto;
+    height:100%;
+    overflow-y:scroll;
+ 
+    .prolog{
+     background: rgba(0,0,0,0.1);
+    
+        h1{
+            text-align: center;
+           -webkit-text-stroke:1px darkblue;
+            padding-bottom:5px;
+            font-size:4vh;
+        }
+        width:95%;
+        height:fit-content;
+        text-align: center;
+        margin:auto;
+        margin-bottom: 5%;
+     
+        font-size:2vh;
+        font-weight:bold;
+    }
+   .table, th,td{
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+    th,td{
+      
+    }
+ .table{
+    width:95%;
+    max-width:96%;
+    margin:auto;
+    height:85%;
+    background-color:bisque;
+
+    .caption{
+        font-size:30px;
+        text-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+    }
+    .titleContent{
+     font-size:110%;
+     box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
+     background-color: lighten(beige,10%);
+     text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+     
+    }
+    .content{
+        background-color: lighten(beige,5%);
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+ }
+}

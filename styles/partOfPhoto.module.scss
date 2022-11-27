@@ -4,7 +4,7 @@
     width:33.33%;
     height:25%;
     background: url("../public/MarcinZdj.png");
-    animation:faceMove 0.5s  4 backwards;
+ 
     animation-delay: calc(0.1s * var(--i));
     transition:transform 0.5s;
     overflow:hidden;
@@ -70,20 +70,7 @@
     transform:translateX(-100%)translateY(-200%)
 }
 
-@keyframes faceMove{
-    0%{
-        transform:rotateX(0deg)
-    }
-    50%{
-        transform:rotateX(180deg)
-    }
-    70%{
-        transform:rotateY(180deg)
-    }
-    100%{
-        transform:rotateX(0deg)
-    }
-}
+
 
 @keyframes backToOriginPosition{
     0%{

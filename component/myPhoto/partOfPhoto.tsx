@@ -13,8 +13,9 @@ interface Props{
 const PartOfPhoto = (props:Props) => {
 
     
-console.log(props)
+
     const partPhoto=useRef<HTMLDivElement>(null)
+
 
     useEffect(()=>{
         if(partPhoto.current!==null){
@@ -77,7 +78,7 @@ console.log(props)
         
        })
        
-    return ( <div style={{"--i":props.id}} ref={partPhoto} className={s.container}>
+    return ( <div  ref={partPhoto} className={s.container}>
 
     </div> );
 }
