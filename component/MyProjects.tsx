@@ -23,7 +23,7 @@ dispatch(savePositionMyProjects({data:myProjects}))
     return ( <section ref={posY} className={s.container}>
         <div className={s.introductory}>
 
-            <h2 className={s.title}>My projects...</h2>
+            <div className={s.titleParent}><h2 className={s.title}>My projects...</h2></div>
         </div>
         <div className={s.myProjectsContainer}>
 

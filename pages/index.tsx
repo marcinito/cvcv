@@ -13,6 +13,7 @@ import MyProjects from '../component/MyProjects'
 import { saveDataMyProjects } from '../redux/features/apiMyProjects/myProjects'
 import { DataMyProjects } from './api/MyProjects'
 import { DataWork } from './api/workData'
+import Contact from '../component/Contact'
 
 export const getStaticProps=async()=>{
   const res= await fetch("http://localhost:3000/api/workData")
@@ -65,7 +66,7 @@ useEffect(()=>{
       </main>
 
       <footer className={s.footer}>
-       
+       <Contact></Contact>
       </footer>
     </div>
   )

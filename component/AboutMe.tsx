@@ -1,4 +1,4 @@
-import s from '../styles/AboutMe.module.scss'
+import s from '../styles/aboutme/AboutMe.module.scss'
 import { useRef,useEffect,useState } from 'react';
 import type { RootState } from '../redux/store';
 import { useSelector, useDispatch } from 'react-redux'
@@ -34,10 +34,10 @@ useEffect(()=>{
            <h1>{arrayComponent[index].title}</h1>
         </div>
         <nav className={s.navAboutMe}>
-           <div className={`${s.tab} ${s.hobby}`} onClick={()=>setIndex(0)}>About Me</div>
-           <div className={`${s.tab} ${s.sport}`} onClick={()=>setIndex(1)}>Sport</div>
-           <div className={`${s.tab} ${s.work}`} onClick={()=>setIndex(2)}>Work</div>
-           <div className={`${s.tab} ${s.hobby}`}>Hobby</div>
+           <div className={`${s.tab} ${s.hobby}`} onClick={()=>setIndex(0)}><div className={s.hover1}></div><span className={s.text}>About Me</span></div>
+           <div className={`${s.tab} ${s.sport}`} onClick={()=>setIndex(1)}><div className={s.hover2}></div><span className={s.text}>Sport</span></div>
+           <div className={`${s.tab} ${s.work}`} onClick={()=>setIndex(2)}><div className={s.hover3}></div><span className={s.text}>Work</span></div>
+           <div className={`${s.tab} ${s.hobby}`} onClick={()=>setIndex(3)}><div className={s.hover4}></div><span className={s.text}>Hobby</span></div>
            
          
            </nav>

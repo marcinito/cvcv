@@ -25,8 +25,8 @@ console.log(data,"work")
             
             
             return (
-                <>
-                <table key={el.description.slice(0,10)} className={s.table}>
+                <span key={el.id}>
+                <table className={s.table}>
                   
                     
 <tbody>
@@ -71,7 +71,7 @@ console.log(data,"work")
 <br></br>
 <br></br>
 <br></br>
-</>
+</span>
             )
         })}
 
