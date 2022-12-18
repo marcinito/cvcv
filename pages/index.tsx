@@ -14,18 +14,22 @@ import { saveDataMyProjects } from '../redux/features/apiMyProjects/myProjects'
 import { DataMyProjects } from './api/MyProjects'
 import { DataWork } from './api/workData'
 import Contact from '../component/Contact'
+import { saveDataMySport } from '../redux/features/apiSport/apiSport'
 
 export const getStaticProps=async()=>{
   const res= await fetch("http://localhost:3000/api/workData")
   const myWork= await res.json()
   const resMyProjects= await fetch("http://localhost:3000/api/MyProjects")
   const myProjects= await resMyProjects.json()
+  const resSport=await fetch("http://localhost:3000/api/Sport")
+  const Sport=await resSport.json()
 
 
   return {
     props:{
       myWork,
-      myProjects
+      myProjects,
+      Sport
     }
   }
 }
@@ -36,6 +40,8 @@ console.log(props,"props")
   const dispatch=useDispatch()
   dispatch(saveDataFromApiWork(props.myWork))
   dispatch(saveDataMyProjects(props.myProjects))
+  dispatch(saveDataMySport(props.Sport))
+ 
  
 
 useEffect(()=>{

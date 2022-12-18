@@ -2,11 +2,15 @@ import { configureStore } from '@reduxjs/toolkit'
 import counterReducer from '../redux/features/PositionElement/positionElementSlice'
 import apiWorkReducer from '../redux/features/apiWork/apiWork'
 import apiMyProjectReducer from '../redux/features/apiMyProjects/myProjects'
+import apiMySport from './features/apiSport/apiSport'
 export const store = configureStore({
   reducer: {
     positionElement:counterReducer,
     apiWork:apiWorkReducer,
-    myProjects:apiMyProjectReducer
+    myProjects:apiMyProjectReducer,
+    apiMySport,
+
+
   }
 })
 

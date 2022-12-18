@@ -1,3 +1,46 @@
 .container{
     position: relative;
+
+
+
+    .favouriteSports{
+        width:100%;
+        border:3px solid green;
+        background-color: skyblue;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:3%;
+      
+        overflow-y:scroll;
+        
+        .article{
+            width:90%;
+            height:fit-content;
+            border:3px groove silver;
+            margin-bottom: 5%;
+           
+            .title{
+                font-size:2rem;
+                text-align: center;
+                -webkit-text-stroke:1px red;
+                    
+                background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+            }
+          
+            .img{
+                width:100%;
+
+            }
+            .describe{
+              
+                background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                text-align: center;
+                font-size:1.3rem;
+               
+            }
+        }
+
+    }
 }
