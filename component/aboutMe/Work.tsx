@@ -62,7 +62,7 @@ console.log(data,"work")
         <th className={s.titleContent}>Description</th>
     </tr>
     <tr>
-        <td className={s.content}>
+        <td className={s.contentDescription}>
         {el.description}
         </td>
         </tr>

@@ -9,7 +9,7 @@ export interface apiWork {
 
 const initialState: apiWork = {
   value: {dataWork:[{jobTitle:"",company:"",city:"",timePeriod:{from:"",to:""},
-  description:""}]}
+  description:"",id:0}]}
   
 }
 

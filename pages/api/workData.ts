@@ -11,7 +11,7 @@ export type DataWork = {
       to:string|number
 
   },description:string,
-  id:number
+  id:number,
 }[]
 }
 
@@ -23,7 +23,7 @@ export default function handler(
     { dataWork:
       [
         //FIRST
-        {jobTitle:"builder",company:"Stas-Bud",city:"Olsztyn",timePeriod:{from:"10.07.2012",to:"28.08.2012"},
+        {jobTitle:"Bulding area",company:"Stas-Bud",city:"Olsztyn",timePeriod:{from:"10.07.2012",to:"28.08.2012"},
   description:"My responsibility was destroy old wall and prepare the site for rebuilding",id:0},
   //Second
   {jobTitle:"builder",company:"Stas-Bud",city:"Olsztyn",timePeriod:{from:"10.07.2012",to:"28.08.2012"},

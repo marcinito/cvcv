@@ -8,6 +8,7 @@
         margin:auto;
         height:100%;
         overflow-y:scroll;
+        
      
         .prolog{
          background: rgba(0,0,0,0.1);
@@ -27,12 +28,18 @@
             font-size:2vh;
             font-weight:bold;
         }
-       .table, th,td{
-            border:1px solid black;
-            border-collapse: collapse;
+     
+       th{
+            height:50px;
+            min-height:50px;
+            max-height:100%;
+           
+    
         }
-        th,td{
-          
+        td{
+            height:50px;
+            min-height:50px;
+            max-height:100%;
         }
      .table{
         width:95%;
@@ -40,21 +47,30 @@
         margin:auto;
         height:85%;
         background-color:bisque;
+        border:5px solid black;
+        border-radius:1%;
+        box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
     
-        .caption{
-            font-size:1rem;
-            text-shadow: 2px 4px 4px rgba(0,0,0,0.5);
-        }
+     
         .titleContent{
-         font-size:1.1rem;
+         font-size:2.1rem;
          box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
          background-color: lighten(beige,10%);
          text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+     
+         
          
         }
         .content{
             background-color: lighten(beige,5%);
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-size:2.1rem;
+        }
+        .contentDescription{
+           font-size:1.9rem;
+            background-color: green;
+            padding:0;
+            margin:0;
         }
         
      }

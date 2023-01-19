@@ -1,18 +1,38 @@
 .container{
     position: relative;
+    height:100%;
+   
+.preamble{
+    width:100%;
+    padding-top:10px;
+    height:10%;
 
 
+    h1{
+        font-size:3rem;
+        text-align: center;
+        font-family:monospace;
+        -webkit-text-stroke:0.4px #00ca00;
+    }
+    p{
+        font-size:1.5rem;
+        text-indent: 3%;
+        font-family:monospace;
+        padding-bottom: 3%;
+        -webkit-text-stroke:1px #ca00ca
+    }
+
+}
 
     .favouriteSports{
         width:100%;
-        border:3px solid green;
         background-color: skyblue;
-        height:100vh;
+        height:90%;
         display:flex;
         flex-direction: column;
         align-items: center;
         padding-top:3%;
-      
+     
         overflow-y:scroll;
         
         .article{
