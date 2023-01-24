@@ -6,10 +6,8 @@ const Generic = () => {
     useEffect(()=>{
       if(container.current!==null){
         let height=container.current?.getBoundingClientRect().height
-        console.log(height,"wysokośc")
-        if(height<850){
-         container.current.style.overflowY="scroll"   
-        }
+        
+     
       }
     })
     return ( 

@@ -1,7 +1,7 @@
 
 
     
-    @media (width>200px){
+    @media (width>200px) and (height<900px){
         //container where is full section about overall me
         .container{
             position:relative;
@@ -92,27 +92,31 @@
     }
     }
 
-
-    @media (width>700px){
+    @media (width>200px) and (height>900px){
         //container where is full section about overall me
         .container{
             position:relative;
             width:99%;
             margin:auto;
             height:100%;
-            overflow-y: hidden;
+            overflow-y:scroll;
+
+            @media(width>=500px){
+                width:80%;
+            }
             .prolog{
-          
              background: rgba(0,0,0,0.1);
-            
+             font-size:2rem;
+                
                 h1{
                     text-align: center;
                    -webkit-text-stroke:1px darkblue;
                     padding-bottom:5px;
-                    font-size:16px;
+                  
+                   font-size:3rem;
                 }
                 width:95%;
-                height:10%;
+                height:fit-content;
                 text-align: center;
                 margin:auto;
                 margin-bottom: 5%;
@@ -120,30 +124,38 @@
                 font-size:2vh;
                 font-weight:bold;
             }
-         .workExample{
-            position: relative;
-            top:-5%;
-            display: grid;
-            grid-template-columns: [first-left]32% [second]32% [third]32% [four];
-            grid-template-rows: auto;
-            height:80%;
-            overflow-y: scroll; 
-            column-gap: 2%;
-            row-gap: 5%;
-           
-            
-            
-          
-         .table{
          
+           th{
+                height:50px;
+                min-height:50px;
+                max-height:100%;
                
-               width:100%;
-                height:80%;
-     
+        
+            }
+            td{
+                height:50px;
+                min-height:50px;
+                max-height:100%;
+            }
+            .workExample{
+             display: grid;
+             grid-template-columns: 1fr;
+             grid-template-rows: auto;
+             row-gap: 0.25%;
+
+            .table{
+         
+            width:98%;
+        
+            height:50%;
+            background-color:bisque;
+          
+            border-radius:1%;
             box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
-           
+        
+        
             .titleContent{
-             font-size:1.2rem;
+             font-size:2.4rem;
              box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
              background-color: lighten(beige,10%);
              text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
@@ -152,14 +164,95 @@
             .content{
                 background-color: lighten(beige,5%);
                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-               font-size:1.4rem;
+               font-size:2rem;
                text-align: center;
                color:darkblue;
                -webkit-text-stroke:0.5px orange;
                text-shadow:2px 2px 3px rgba(0,0,0,0.5);
             }
             .contentDescription{
-               font-size:1.3rem;
+                font-size:2.3rem;
+                background-color: lighten(skyblue,10%);
+                padding:0;
+                margin:0;
+                text-align: center;
+                font-weight:bold;
+                padding:2%;
+            }
+            
+         }
+        }
+    }
+    }
+
+    @media (width>700px) and (height<900px){
+        //container where is full section about overall me
+        .container{
+            position:relative;
+            width:99%;
+            margin:auto;
+            height:100%;
+            overflow-y: hidden;
+            .prolog{
+                
+             background: rgba(0,0,0,0.1);
+            
+                h1{
+                    text-align: center;
+                   -webkit-text-stroke:1px darkblue;
+                    padding-bottom:5px;
+                    font-size:3rem;
+                }
+                width:95%;
+                height:15%;
+                text-align: center;
+                margin:auto;
+                margin-bottom: 5%;
+             
+                font-size:2.5rem;
+                font-weight:bold;
+                
+            }
+         .workExample{
+            position: relative;
+            top:-5%;
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: auto;
+            height:75%;
+            overflow-y: scroll; 
+            column-gap: 2%;
+            row-gap: 5%;
+           
+            
+            
+          
+         .table{
+                font-size:2rem;
+               
+               width:100%;
+                height:80%;
+     
+            box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
+           
+            .titleContent{
+             font-size:1.4rem;
+             box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
+             background-color: lighten(beige,10%);
+             text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+             font-family: 'Righteous', cursive;
+            }
+            .content{
+                background-color: lighten(beige,5%);
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size:2rem;
+               text-align: center;
+               color:darkblue;
+               -webkit-text-stroke:0.5px orange;
+               text-shadow:2px 2px 3px rgba(0,0,0,0.5);
+            }
+            .contentDescription{
+               font-size:2.5rem;
                 background-color: lighten(skyblue,10%);
                 padding:0;
                 margin:0;
@@ -191,8 +284,398 @@
         }
     }
 
+    @media (width>700px) and (height>900px){
+        //container where is full section about overall me
+        .container{
+            position:relative;
+            width:99%;
+            margin:auto;
+            height:100%;
+            overflow-y: hidden;
+            .prolog{
+          
+             background: rgba(0,0,0,0.1);
+            
+                h1{
+                    text-align: center;
+                   -webkit-text-stroke:1px darkblue;
+                    padding-bottom:5px;
+                    font-size:3rem;
+                }
+                width:95%;
+                height:15%;
+                text-align: center;
+                margin:auto;
+                margin-bottom: 5%;
+             
+                font-size:2.4rem;
+                font-weight:bold;
+            }
+         .workExample{
+            position: relative;
+            top:-5%;
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: auto;
+            height:75%;
+            overflow-y: scroll; 
+            column-gap: 2%;
+            row-gap: 5%;
+           
+            
+            
+          
+         .table{
+                
+               
+               width:100%;
+                height:80%;
+     
+            box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
+           
+            .titleContent{
+             font-size:2.4rem;
+             box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
+             background-color: lighten(beige,10%);
+             text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+             font-family: 'Righteous', cursive;
+            }
+            .content{
+                background-color: lighten(beige,5%);
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size:2.4rem;
+               text-align: center;
+               color:darkblue;
+               -webkit-text-stroke:0.5px orange;
+               text-shadow:2px 2px 3px rgba(0,0,0,0.5);
+            }
+            .contentDescription{
+               font-size:2.4rem;
+                background-color: lighten(skyblue,10%);
+                padding:0;
+                margin:0;
+                text-align: center;
+                font-weight:bold;
+                padding:2%;
+            }
+        }
+         }
+         .workExample::-webkit-scrollbar {
+            width: 10px;
+          }
+          .workExample::-webkit-scrollbar-track {
+            width: 5px;
+          }
+       
+          .workExample::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+          .workExample::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px 5px grey;
+            border-radius: 10px;
+          }
+          .workExample::-webkit-scrollbar-thumb {
+            box-shadow: inset 0px 0px 5px red,inset 0px 0px 10px #ca00ca;
+            opacity:0.4;
+            border-radius: 10px;
+          }
+        }
+    }
 
-  
+    @media (width>1400px) and ( height < 900px){
+        //container where is full section about overall me
+        .container{
+            
+            position:relative;
+            width:99%;
+            margin:auto;
+            height:100%;
+            overflow-y: hidden;
+            .prolog{
+          
+             background: rgba(0,0,0,0.1);
+            
+                h1{
+                    text-align: center;
+                   -webkit-text-stroke:1px darkblue;
+                    padding-bottom:5px;
+                    font-size:35px;
+                }
+                width:95%;
+                height:15%;
+                text-align: center;
+                margin:auto;
+                margin-bottom: 5%;
+             
+                font-size:2.5rem;
+                font-weight:bold;
+            }
+         .workExample{
+            position: relative;
+            top:-5%;
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: auto;
+            height:75%;
+            overflow-y: scroll; 
+            column-gap: 2%;
+            row-gap: 5%;
+           
+            
+            
+          
+         .table{
+                
+               
+               width:100%;
+                height:80%;
+     
+            box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
+           
+            .titleContent{
+             font-size:2rem;
+             box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
+             background-color: lighten(beige,10%);
+             text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+             font-family: 'Righteous', cursive;
+            }
+            .content{
+                background-color: lighten(beige,5%);
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size:2.5rem;
+               text-align: center;
+               color:darkblue;
+               -webkit-text-stroke:0.5px orange;
+               text-shadow:2px 2px 3px rgba(0,0,0,0.5);
+            }
+            .contentDescription{
+               font-size:2.5rem;
+                background-color: lighten(skyblue,10%);
+                padding:0;
+                margin:0;
+                text-align: center;
+                font-weight:bold;
+                padding:2%;
+            }
+        }
+         }
+         .workExample::-webkit-scrollbar {
+            width: 10px;
+          }
+          .workExample::-webkit-scrollbar-track {
+            width: 5px;
+          }
+       
+          .workExample::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+          .workExample::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px 5px grey;
+            border-radius: 10px;
+          }
+          .workExample::-webkit-scrollbar-thumb {
+            box-shadow: inset 0px 0px 5px red,inset 0px 0px 10px #ca00ca;
+            opacity:0.4;
+            border-radius: 10px;
+          }
+        }
+    }
+    @media (width>1400px) and ( height > 900px){
+        //container where is full section about overall me
+        .container{
+            
+            position:relative;
+            width:99%;
+            margin:auto;
+            height:100%;
+            overflow-y: hidden;
+            .prolog{
+          
+             background: rgba(0,0,0,0.1);
+            
+                h1{
+                    text-align: center;
+                   -webkit-text-stroke:1px darkblue;
+                    padding-bottom:5px;
+                    font-size:35px;
+                }
+                width:95%;
+                height:15%;
+                text-align: center;
+                margin:auto;
+                margin-bottom: 5%;
+             
+                font-size:2.5rem;
+                font-weight:bold;
+            }
+         .workExample{
+            position: relative;
+            top:-5%;
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: auto;
+            height:75%;
+            overflow-y: scroll; 
+            column-gap: 2%;
+            row-gap: 5%;
+           
+            
+            
+          
+         .table{
+                
+               
+               width:100%;
+                height:80%;
+     
+            box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
+           
+            .titleContent{
+             font-size:2rem;
+             box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
+             background-color: lighten(beige,10%);
+             text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+             font-family: 'Righteous', cursive;
+            }
+            .content{
+                background-color: lighten(beige,5%);
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size:2.5rem;
+               text-align: center;
+               color:darkblue;
+               -webkit-text-stroke:0.5px orange;
+               text-shadow:2px 2px 3px rgba(0,0,0,0.5);
+            }
+            .contentDescription{
+               font-size:2.5rem;
+                background-color: lighten(skyblue,10%);
+                padding:0;
+                margin:0;
+                text-align: center;
+                font-weight:bold;
+                padding:2%;
+            }
+        }
+         }
+         .workExample::-webkit-scrollbar {
+            width: 10px;
+          }
+          .workExample::-webkit-scrollbar-track {
+            width: 5px;
+          }
+       
+          .workExample::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+          .workExample::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px 5px grey;
+            border-radius: 10px;
+          }
+          .workExample::-webkit-scrollbar-thumb {
+            box-shadow: inset 0px 0px 5px red,inset 0px 0px 10px #ca00ca;
+            opacity:0.4;
+            border-radius: 10px;
+          }
+        }
+    }
+    @media (width>1400px) and ( height > 1500px){
+        //container where is full section about overall me
+        .container{
+            
+            position:relative;
+            width:99%;
+            margin:auto;
+            height:100%;
+            overflow-y: hidden;
+            .prolog{
+          
+             background: rgba(0,0,0,0.1);
+            
+                h1{
+                    text-align: center;
+                   -webkit-text-stroke:1px darkblue;
+                    padding-bottom:5px;
+                    font-size:5rem;
+                }
+                width:95%;
+                height:15%;
+                text-align: center;
+                margin:auto;
+                margin-bottom: 5%;
+             
+                font-size:3rem;
+                font-weight:bold;
+            }
+         .workExample{
+            position: relative;
+            top:-5%;
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: auto;
+            height:75%;
+            overflow-y: scroll; 
+            column-gap: 2%;
+            row-gap: 5%;
+           
+            
+            
+          
+         .table{
+                
+               
+               width:100%;
+                height:80%;
+     
+            box-shadow:2px -2px 5px 4px rgba(0,0,0,0.2),2px -2px 5px 4px rgba(245,0,0,0.2);
+           
+            .titleContent{
+             font-size:2.5rem;
+             box-shadow:inset 2px 4px 4px rgba(0,0,0,0.6);
+             background-color: lighten(beige,10%);
+             text-shadow: 2px  3px 3px rgba(0,0,0,0.2);
+             font-family: 'Righteous', cursive;
+            }
+            .content{
+                background-color: lighten(beige,5%);
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size:3rem;
+               text-align: center;
+               color:darkblue;
+               -webkit-text-stroke:0.5px orange;
+               text-shadow:2px 2px 3px rgba(0,0,0,0.5);
+            }
+            .contentDescription{
+               font-size:3.5rem;
+                background-color: lighten(skyblue,10%);
+                padding:0;
+                margin:0;
+                text-align: center;
+                font-weight:bold;
+                padding:2%;
+            }
+        }
+         }
+         .workExample::-webkit-scrollbar {
+            width: 10px;
+          }
+          .workExample::-webkit-scrollbar-track {
+            width: 5px;
+          }
+       
+          .workExample::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+          .workExample::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px 5px grey;
+            border-radius: 10px;
+          }
+          .workExample::-webkit-scrollbar-thumb {
+            box-shadow: inset 0px 0px 5px red,inset 0px 0px 10px #ca00ca;
+            opacity:0.4;
+            border-radius: 10px;
+          }
+        }
+    }
 
 
     

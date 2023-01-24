@@ -10,17 +10,14 @@ const MyProjects = () => {
     const dispatch=useDispatch()
     const data=useSelector((state:RootState)=>state.myProjects.value)
     const posY=useRef<HTMLDivElement|null>(null)
-    
+    console.log(data)
 let myProjects:number
     useEffect(()=>{
 window.scroll(0,0)
 if(posY.current!==null){
 myProjects=posY.current.getBoundingClientRect().y
-let width=posY.current.getBoundingClientRect().width>699
-if(!width){
-    posY.current.style.overflow="none"
-    console.log("DZIALA?")
-}
+
+
 }
 dispatch(savePositionMyProjects({data:myProjects}))
     },[])
@@ -32,7 +29,7 @@ dispatch(savePositionMyProjects({data:myProjects}))
         <div className={s.myProjectsContainer}>
 
       
-     {data!==null?data.map((el,i,arr)=>{
+       {data.map((el,i,arr)=>{
         return(
             <article key={el.id} className={s.articleGame}>
                 <div className={s.title}>{el.titleGame}</div>
@@ -48,7 +45,7 @@ dispatch(savePositionMyProjects({data:myProjects}))
                 <span></span>
             </article>
         )
-       }):null}
+       })}
   </div>
     </section> );
 }
