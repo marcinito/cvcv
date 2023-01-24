@@ -36,7 +36,7 @@ export const getStaticProps=async()=>{
 
 
 const Home: NextPage = (props:any) => {
-console.log(props,"props")
+
   const dispatch=useDispatch()
   dispatch(saveDataFromApiWork(props.myWork))
   dispatch(saveDataMyProjects(props.myProjects))

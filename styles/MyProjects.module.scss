@@ -1,14 +1,10 @@
-@import './mixins/mediaQuery';
-@include mq(xsmall){
+
+@media (width>200px){
     .container{
         background-color: lighten(pink,10%);
         width:100%;
         height:40%;
       
-     
-       
-      
-     
         .introductory{
             position: relative;
             display: flex;
@@ -95,7 +91,7 @@
        align-items: center;
         flex-direction: column;
         height:93%;
-        overflow-y:scroll;
+      
       //component with project
         .articleGame{
           
@@ -241,7 +237,7 @@
     }
     }
 }
-@include mq(small){
+@media(width > 500px){
     .container{
         background-color: lighten(pink,10%);
         width:100%;
@@ -332,7 +328,7 @@
        align-items: center;
       
         height:93%;
-        overflow-y:scroll;
+     
       //component with project
         .articleGame{
           
@@ -472,7 +468,7 @@
     }
     }
 }
-@include mq(medium){
+@media (width >700px){
     .container{
     
         background-color: lighten(pink,10%);
@@ -565,7 +561,7 @@
         justify-content: center;
       flex-direction: row;
         height:93%;
-        overflow-y:scroll;
+        
       //component with project
         .articleGame{
           

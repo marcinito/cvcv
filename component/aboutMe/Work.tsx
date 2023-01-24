@@ -26,7 +26,8 @@ console.log(data,"work")
             
             return (
                 
-                <table className={s.table}>
+                <table className={s.table} key={el.id}>
+                    <tbody>
 <tr>
     <th className={s.titleContent}>Job Title</th>
 </tr>
@@ -61,7 +62,7 @@ console.log(data,"work")
         {el.description}
         </td>
         </tr>
-      
+        </tbody>
 </table>
 
 

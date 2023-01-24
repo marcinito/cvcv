@@ -20,8 +20,8 @@ export default function handler(
       url:"https://marcinito.github.io/lurch/",
   thumbNail:"/MyProjects/lurchImg.png",
   describe:` Game embeded in fantastic World of LuRcH in which Timmy hero
-   of this game fight against monster in order to save his sheep.Game for people
-   who are looking adventure and can handle varioustype of gun.Try youreslf maybe you will slay furious dragon.`,
+   of this game fight against monster in order to save his sheeps.Game for people
+   who are looking adventure and can handle various type of gun.Try youreslf maybe you will slay furious dragon.`,
    id:1},
    /////NEXT
    {

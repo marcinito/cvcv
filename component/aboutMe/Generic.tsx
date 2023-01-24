@@ -1,8 +1,19 @@
 import s from '../../styles/aboutme/Generic.module.scss'
 import { AiOutlineGlobal } from "react-icons/ai";
+import { useEffect, useRef } from 'react';
 const Generic = () => {
+    const container=useRef<HTMLDivElement|null>(null)
+    useEffect(()=>{
+      if(container.current!==null){
+        let height=container.current?.getBoundingClientRect().height
+        console.log(height,"wysokośc")
+        if(height<850){
+         container.current.style.overflowY="scroll"   
+        }
+      }
+    })
     return ( 
-        <div className={s.container}>
+        <div className={s.container} ref={container}>
              I am energetic person with positive attitude towards life, eager to learn and 
              bring good value to live other people. I like spent my time on study thing associated with 
              computer science, language, maths, diet, and everything what can be interesing and improve world around me.

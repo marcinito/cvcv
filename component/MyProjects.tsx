@@ -16,7 +16,11 @@ let myProjects:number
 window.scroll(0,0)
 if(posY.current!==null){
 myProjects=posY.current.getBoundingClientRect().y
-console.log(myProjects)
+let width=posY.current.getBoundingClientRect().width>699
+if(!width){
+    posY.current.style.overflow="none"
+    console.log("DZIALA?")
+}
 }
 dispatch(savePositionMyProjects({data:myProjects}))
     },[])
