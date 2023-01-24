@@ -20,18 +20,13 @@ console.log(data,"work")
         </section>
         <br></br>
         <br></br>
-   
+   <div className={s.workExample}>
         {data.dataWork.map((el,i,arr)=>{
             
             
             return (
-                <span key={el.id}>
+                
                 <table className={s.table}>
-                  
-                    
-<tbody>
-
-
 <tr>
     <th className={s.titleContent}>Job Title</th>
 </tr>
@@ -66,15 +61,13 @@ console.log(data,"work")
         {el.description}
         </td>
         </tr>
-        </tbody>
+      
 </table>
-<br></br>
-<br></br>
-<br></br>
-</span>
+
+
             )
         })}
-
+</div>
      
     </div> );
 }

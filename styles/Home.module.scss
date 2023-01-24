@@ -32,7 +32,7 @@ overflow:hidden;
     overflow:hidden;
       box-sizing: border-box;
       width:100%;
-      height:500vh;
+      height:400vh;
     
       .nav{
         position: relative;
@@ -45,11 +45,37 @@ overflow:hidden;
         position:relative;
         height:80%;
         z-index:0;
-        border:5px solid green;
        
+      }
+      .footer{
+        height:16%;
+       
+    
+      }
+    
+    }
+}
+@media (width>= 1000px){
+  .container{
+    position: relative;
+    left:15%;
+    overflow:hidden;
+      box-sizing: border-box;
+      width:70%;
+      height:400vh;
+    
+      .nav{
+        position: relative;
+        width:100%;
+        height:4%;
+        z-index:2;
       
-     
-      
+      }
+      .main{
+        position:relative;
+        height:80%;
+        z-index:0;
+       
       }
       .footer{
         height:16%;

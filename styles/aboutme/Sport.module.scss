@@ -64,3 +64,155 @@
 
     }
 }
+@media (width>500px){
+    .container{
+        position: relative;
+        height:100%;
+       
+    .preamble{
+        width:100%;
+        padding-top:10px;
+        height:10%;
+    
+    
+        h1{
+            font-size:3rem;
+            text-align: center;
+            font-family:monospace;
+            -webkit-text-stroke:0.4px #00ca00;
+        }
+        p{
+            font-size:1.5rem;
+            text-indent: 3%;
+            font-family:monospace;
+            padding-bottom: 3%;
+            -webkit-text-stroke:1px #ca00ca
+        }
+    
+    }
+    //set of favourites sport
+        .favouriteSports{
+            width:100%;
+            background-color: skyblue;
+            height:90%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top:3%;
+            overflow-y:scroll;
+            .article{
+             
+                width:80%;
+                height:50%;
+                height:fit-content;
+                border:3px groove silver;
+                margin-bottom: 5%;
+                @media (width>=600px){
+                    width:70%;
+                }
+                
+               
+                .title{
+                    font-size:2rem;
+                    text-align: center;
+                    -webkit-text-stroke:1px red;
+                        
+                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                }
+              
+                .img{
+                    width:100%;
+    
+                }
+                .describe{
+                  
+                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    text-align: center;
+                    font-size:1.3rem;
+                   
+                }
+            }
+    
+        }
+    }
+}
+@media (width>=700px){
+    .container{
+        position: relative;
+        height:100%;
+   
+    .preamble{
+        width:100%;
+        padding-top:10px;
+        height:10%;
+    
+    
+        h1{
+            font-size:3rem;
+            text-align: center;
+            font-family:monospace;
+            -webkit-text-stroke:0.4px #00ca00;
+        }
+        p{
+            font-size:1.7rem;
+            text-indent: 3%;
+            font-family:monospace;
+            padding-bottom: 3%;
+            -webkit-text-stroke:1px rgba($color: #000000, $alpha: 1.0);
+            text-shadow: 2px 2px 3px orange;
+        }
+    
+    }
+    //set of favourites sport
+        .favouriteSports{
+            width:100%;
+            background-color: skyblue;
+            height:90%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: normal;
+            padding-top:3%;
+            flex-wrap: wrap;
+            overflow-y: hidden;
+            padding:2%;  
+            .article{
+                position: relative;
+                width:33.3%;
+                height:40%;
+                border:3px groove silver;
+                margin-bottom: 5%;
+                overflow:hidden;
+                transition:transform 0.5s;
+             
+                
+               
+                .title{
+                    font-size:2rem;
+                    text-align: center;
+                    -webkit-text-stroke:1px red;
+                        height:10%;
+                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                }
+              
+                .img{
+                    width:100%;
+                    height:65%;
+    
+                }
+                .describe{
+                  
+                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    text-align: center;
+                    font-size:1.3rem;
+                    height:25%;
+                   
+                }
+            }
+            .article:hover{
+                transform:rotateY(50deg)
+            }
+    
+        }
+    }
+}

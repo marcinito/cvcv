@@ -3,24 +3,29 @@ import { AiOutlineGlobal } from "react-icons/ai";
 const Generic = () => {
     return ( 
         <div className={s.container}>
-        <p className={s.pDescribe}><em>Hi</em>...i am from Earth <AiOutlineGlobal></AiOutlineGlobal> more preciously from Poland,
-        my country lay 28 000 000 000 transit years from  
-        <a href="https://en.wikipedia.org/wiki/WHL0137-LS" target="_blank">Earendel</a>.
-        In spare time I like learning about things that interest me, going to gym, drive on bicycle, do maths task,
-        listen music and be around nature.
-        I would like start work like front-end web developer because I really like spent time writing code, and learning 
-        new thing about it.I think it is my passion.I used to learn about computer since when I had 16 years old then I built,
-        my own server in game of name <q>Tibia</q><em>MMORPG-type</em> which gathered around 30 players online.It gave me a lot 
-        <span className={s.secondPartText}>
-        satysfaction.
-        After some years I backed to learning and interesing things like this , between this period of time I finished school ,got drive licence for HGV,
-        worked abroad and got nice experience about another culture and country by chance I become traveler because I was working 
-        in 4 country Germany , Norway , Nederland , England and I was on holiday in some place.During this time I liked reading book 
-        about scien-fiction , psychology, action, medieva fiction.I like improve things around me and aspect in my live.
-        </span>
-       
-
-        </p> 
+             I am energetic person with positive attitude towards life, eager to learn and 
+             bring good value to live other people. I like spent my time on study thing associated with 
+             computer science, language, maths, diet, and everything what can be interesing and improve world around me.
+             Currently I gather and increase everyday knowledge about
+             <ul className={s.ulList}>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>CSS/SASS</li>
+                <li>TypeScript</li>
+                <li>GitHub</li>
+             </ul>
+             I like spent time on conceive resolution for challenge which i meet in code and i want develop
+             myself in this direction.
+             I need learn a lot and I know that infinite ocean of knowledge expanse before me and I feel excitment.
+            <span style={{textShadow:`2px 2px 3px white`}}>
+            I belive and I am certain that I need only time to achieve my goals because everything what I need i have in myself,
+             like everybody. In future when i acomplish very good level in JavaScript and frontend , I will start learn C language 
+            and things associated with electricy because I would like create robot. I also would like go to univeristy in order
+            to be around people with similar interesing and achieve degree. I like learn by myself but it would be nice have attest for
+            my knowledge.
+            </span>
+             
         </div>
      );
 }
