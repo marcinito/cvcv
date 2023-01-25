@@ -45,7 +45,7 @@ export default function handler(
 {jobTitle:"line operator",company:"Gousto Warehouse",city:"Spalding",timePeriod:{from:"24.02.2018",to:"10.07.2018"},
          description:`Work in cold store like semi-finished product packer`,id:6},
         ///
-{jobTitle:"line operator",company:"Kinder Garden Plants",city:"Spalding",timePeriod:{from:"10.07.2018",to:"10.03.2019"},
+{jobTitle:"line operator",company:"Kinder Garden Plants",city:"Spalding",timePeriod:{from:"10.07.2018",to:"10.01.2019"},
         description:`flower picker in the greenhouse`,id:7},
 
   ///
