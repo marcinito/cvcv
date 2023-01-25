@@ -1,70 +1,4 @@
-.container{
-    position: relative;
-    height:100%;
-   
-.preamble{
-    width:100%;
-    padding-top:10px;
-    height:10%;
-
-
-    h1{
-        font-size:3rem;
-        text-align: center;
-        font-family:monospace;
-        -webkit-text-stroke:0.4px #00ca00;
-    }
-    p{
-        font-size:1.5rem;
-        text-indent: 3%;
-        font-family:monospace;
-        padding-bottom: 3%;
-        -webkit-text-stroke:1px #ca00ca
-    }
-
-}
-
-    .favouriteSports{
-        width:100%;
-        background-color: skyblue;
-        height:90%;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top:3%;
-     
-        overflow-y:scroll;
-        
-        .article{
-            width:90%;
-            height:fit-content;
-            border:3px groove silver;
-            margin-bottom: 5%;
-           
-            .title{
-                font-size:2rem;
-                text-align: center;
-                -webkit-text-stroke:1px red;
-                    
-                background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
-            }
-          
-            .img{
-                width:100%;
-
-            }
-            .describe{
-              
-                background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
-                text-align: center;
-                font-size:1.3rem;
-               
-            }
-        }
-
-    }
-}
-@media (width>500px){
+@media (width >= 200px) and (height <= 900px){
     .container{
         position: relative;
         height:100%;
@@ -82,15 +16,16 @@
             -webkit-text-stroke:0.4px #00ca00;
         }
         p{
-            font-size:1.5rem;
-            text-indent: 3%;
+            font-size:2.6rem;
+
+           text-align: center;
             font-family:monospace;
             padding-bottom: 3%;
             -webkit-text-stroke:1px #ca00ca
         }
     
     }
-    //set of favourites sport
+    
         .favouriteSports{
             width:100%;
             background-color: skyblue;
@@ -100,20 +35,15 @@
             align-items: center;
             padding-top:3%;
             overflow-y:scroll;
+            
             .article{
-             
-                width:80%;
-                height:50%;
+                width:90%;
                 height:fit-content;
                 border:3px groove silver;
                 margin-bottom: 5%;
-                @media (width>=600px){
-                    width:70%;
-                }
-                
                
                 .title{
-                    font-size:2rem;
+                    font-size:4rem;
                     text-align: center;
                     -webkit-text-stroke:1px red;
                         
@@ -128,7 +58,8 @@
                   
                     background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
                     text-align: center;
-                    font-size:1.3rem;
+                    font-size:3rem;
+                    font-weight:bold;
                    
                 }
             }
@@ -136,10 +67,81 @@
         }
     }
 }
-@media (width>=700px){
+@media (width>=200px) and (height >= 900px){
     .container{
         position: relative;
         height:100%;
+       
+    .preamble{
+        width:100%;
+        padding-top:10px;
+        height:10%;
+    
+    
+        h1{
+            font-size:3.5rem;
+            text-align: center;
+            font-family:monospace;
+            -webkit-text-stroke:0.4px #00ca00;
+        }
+        p{  
+            text-align: center;
+            font-size:2.8rem;
+            text-indent: 3%;
+            font-family:monospace;
+            padding-bottom: 3%;
+            -webkit-text-stroke:1px #ca00ca
+        }
+    
+    }
+    
+        .favouriteSports{
+            width:100%;
+            background-color: skyblue;
+            height:90%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top:3%;
+         
+            overflow-y:scroll;
+            
+            .article{
+                width:90%;
+                height:fit-content;
+                border:3px groove silver;
+                margin-bottom: 5%;
+               
+                .title{
+                    font-size:4rem;
+                    text-align: center;
+                    -webkit-text-stroke:1px red;
+                        
+                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                }
+              
+                .img{
+                    width:100%;
+    
+                }
+                .describe{
+                  
+                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    text-align: center;
+                    font-size:4rem;
+                   
+                }
+            }
+    
+        }
+    }
+}
+
+@media (width>700px) and ( height <= 900px){
+    .container{
+        position: relative;
+        height:100%;
+     
    
     .preamble{
         width:100%;
@@ -176,6 +178,7 @@
             flex-wrap: wrap;
             overflow-y: hidden;
             padding:2%;  
+      
             .article{
                 position: relative;
                 width:33.3%;
@@ -184,6 +187,17 @@
                 margin-bottom: 5%;
                 overflow:hidden;
                 transition:transform 0.5s;
+                @media (width>= 1200px){
+                    width:25%;
+                    margin:2%;
+
+                }
+                @media (width>= 1500px){
+                    width:33%;
+                    margin:0;
+                    
+
+                }
              
                 
                
@@ -193,19 +207,47 @@
                     -webkit-text-stroke:1px red;
                         height:10%;
                     background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    @media (width>= 1000px){
+                        font-size:2.1rem;
+    
+                    }
+                    @media (width>= 1500px){
+                        font-size:2.4rem;
+    
+                    }
+                    @media (width>= 1900px){
+                        font-size:2.7rem;
+    
+                    }
                 }
               
                 .img{
                     width:100%;
-                    height:65%;
+                    height:50%;
     
                 }
                 .describe{
-                  
-                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                        background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
                     text-align: center;
-                    font-size:1.3rem;
-                    height:25%;
+                    font-size:1.5rem;
+                    height:40%;
+                    line-height:1;
+                    font-weight:bold;
+                    @media (width>= 1000px){
+                        font-size:1.7rem;
+    
+                    }
+                    @media (width>= 1500px){
+                        font-size:2rem;
+    
+                    }
+                    @media (width>= 1900px){
+                        font-size:2.3rem;
+    
+                    }
                    
                 }
             }
@@ -216,11 +258,11 @@
         }
     }
 }
-@media (width>=1400px){
+@media (width>700px) and ( height >= 900px){
     .container{
         position: relative;
         height:100%;
-        overflow-y:scroll;
+     
    
     .preamble{
         width:100%;
@@ -235,7 +277,7 @@
             -webkit-text-stroke:0.4px #00ca00;
         }
         p{
-            font-size:2rem;
+            font-size:1.7rem;
             text-indent: 3%;
             font-family:monospace;
             padding-bottom: 3%;
@@ -246,35 +288,61 @@
     }
     //set of favourites sport
         .favouriteSports{
-          
             width:100%;
             background-color: skyblue;
-            height:fit-content;
-            display:grid;
-            grid-template-columns: 48% 48%;
-            grid-template-rows: 300px 300px 300px; 
-            row-gap:2%;
+            height:90%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: normal;
             padding-top:3%;
             flex-wrap: wrap;
-            overflow-y: scroll;
+            overflow-y: hidden;
             padding:2%;  
+      
             .article{
                 position: relative;
-                width:100%;
-                height:100%;
+                width:33.3%;
+                height:40%;
                 border:3px groove silver;
                 margin-bottom: 5%;
                 overflow:hidden;
                 transition:transform 0.5s;
+                @media (width>= 1200px) and (height > 1250px){ 
+                    width:25%;
+                    margin:2%;
+                    padding:0;
+                    margin:0;
+
+
+                }
+                @media (width>= 1500px){
+                    width:33%;
+                    margin:0;
+                    
+
+                }
              
                 
                
                 .title{
-                    font-size:3rem;
+                    font-size:2.3rem;
                     text-align: center;
                     -webkit-text-stroke:1px red;
-                        height:15%;
+                        height:10%;
                     background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    @media (width>= 1000px){
+                        font-size:3rem;
+    
+                    }
+                    @media (width>= 1500px){
+                        font-size:2.4rem;
+    
+                    }
+                    @media (width>= 1900px){
+                        font-size:2.7rem;
+    
+                    }
                 }
               
                 .img{
@@ -283,11 +351,27 @@
     
                 }
                 .describe{
-                  
-                    background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                        background:linear-gradient(55deg,lighten(magenta,30%),lighten(green,60%),lighten(blue,30%));
                     text-align: center;
-                    font-size:2rem;
+                    font-size:1.5rem;
                     height:40%;
+                    line-height:1;
+                    font-weight:bold;
+                    @media (width>= 1000px){
+                        font-size:1.7rem;
+    
+                    }
+                    @media (width>= 1500px){
+                        font-size:2rem;
+    
+                    }
+                    @media (width>= 1900px){
+                        font-size:2.3rem;
+    
+                    }
                    
                 }
             }

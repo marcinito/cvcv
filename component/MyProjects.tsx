@@ -32,7 +32,7 @@ dispatch(savePositionMyProjects({data:myProjects}))
        {data.map((el,i,arr)=>{
         return(
             <article key={el.id} className={s.articleGame}>
-                <div className={s.title}>{el.titleGame}</div>
+                <div className={s.title}><p>{el.titleGame}</p></div>
                 <img src={el.thumbNail}></img>
 
                 <section className={s.describe}>
